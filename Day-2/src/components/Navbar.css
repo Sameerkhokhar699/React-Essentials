@@ -1,0 +1,35 @@
+/* Navbar.css
+
+.navbar {
+  background-color: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+  color: #5e8cff;
+  transform: scale(1.1);
+}
+
+.navbar a.active {
+  color: #5e8cff;
+  border-bottom: 2px solid #5e8cff;
+  padding-bottom: 3px;
+} */
