@@ -5,6 +5,7 @@ const App = () => {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
   const [add, setAdd] = useState([]);
+ 
   const handleSubmit = (e) => {
     // Preventing the default behavior of the form
     e.preventDefault();
@@ -32,7 +33,7 @@ const App = () => {
         onSubmit={(e) => {
           handleSubmit(e);
         }}
-        className="flex items-start flex-col gap-4  p-10 lg:w-1/2"
+        className="flex items-start flex-col gap-4 p-10 lg:w-1/2"
       >
         <h1 className="font-bold text-3xl">Add Notes</h1>
         <input
@@ -58,7 +59,7 @@ const App = () => {
           Add Notes
         </button>
       </form>
-      <div className="lg:w-1/2  lg:border-l-2 p-10 ">
+      <div className="lg:w-1/2  lg:border-l-4 p-10 ">
         <h1 className="font-bold text-3xl">Your Notes</h1>
         <div
           id="scroll"
@@ -72,15 +73,15 @@ const App = () => {
                text-black rounded-2xl p-4 bg-cover bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')]"
               >
                 <div>
-                  <h1 className=" leading-tight  text-lg font-bold  py-2">
+                  <h1 className=" leading-tight  text-lg font-bold py-2">
                     {elem.title}
                   </h1>
-                  <p className="font-semibold text-sm leading-tight text-gray-600 py-2">
+                  <p className="font-semibold text-sm leading-tight text-gray-600 ">
                     {elem.detail}
                   </p>
                 </div>
                 <button
-                  className="w-full bg-red-600 text-white text-xs  border-2 rounded-full py-2 font-bold active:scale-95 cursor-pointer"
+                  className="w-full bg-red-600 text-white text-xs border-2 rounded-full py-2 font-bold active:scale-95 cursor-pointer"
                   onClick={() => {
                     handleDelete(index);
                   }}
